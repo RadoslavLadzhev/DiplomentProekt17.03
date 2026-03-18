@@ -1,7 +1,16 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\data\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:data\\car.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,11 +18,37 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Car.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Data\\Car.cs",
+              "RelativeDocumentMoniker": "Data\\Car.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Data\\Car.cs",
+              "RelativeToolTip": "Data\\Car.cs",
+              "ViewState": "AgIAABUAAAAAAAAAAAA3wBoAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-18T08:41:29.522Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Cars\\Index.cshtml",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Index.cshtml",
+              "RelativeToolTip": "Views\\Cars\\Index.cshtml",
+              "ViewState": "AgIAAD8AAAAAAAAAAAAAAEMAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-03-18T08:33:10.111Z",
+              "EditorCaption": ""
             }
           ]
         }

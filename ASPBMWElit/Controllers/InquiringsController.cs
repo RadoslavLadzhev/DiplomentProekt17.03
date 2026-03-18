@@ -66,13 +66,23 @@ namespace ASPBMWElit.Controllers
         {
             inquiring.InspectionDate = DateTime.Now;
             inquiring.ClientId = _userManager.GetUserId(User);
+
+          
+            if (!_context.Cars.Any(c => c.Id == inquiring.CarId))
+            {
+                ModelState.AddModelError("CarId", "Избраният автомобил не съществува!");
+                ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Model", inquiring.CarId);
+                return View(inquiring);
+            }
+
             if (ModelState.IsValid)
             {
                 _context.Inquirings.Add(inquiring);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Id", inquiring.ClientId);
+
+            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Model", inquiring.CarId);
             return View(inquiring);
         }
 

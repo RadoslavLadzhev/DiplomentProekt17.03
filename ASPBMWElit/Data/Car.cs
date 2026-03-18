@@ -24,7 +24,7 @@
         public double Price { get; set; }
         public int CreatedAt { get; set; }
         //1:M
-        //  public Inquiring Inquirings { get; set; }
+        public ICollection<Inquiring> Inquirings { get; set; }
 
         public FuelType FuelTypes { get; set; }
 
