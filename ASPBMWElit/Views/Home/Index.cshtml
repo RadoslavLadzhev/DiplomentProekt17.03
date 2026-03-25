@@ -1,8 +1,59 @@
 ﻿@{
-    ViewData["Title"] = "Home Page";
+    ViewData["Title"] = "Начало";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="hero-section">
+    <div class="hero-overlay">
+        <div class="hero-content">
+            <h1>BMW Елит</h1>
+            <p>Открий своя следващ автомобил с качество, стил и сигурност.</p>
+            <a asp-controller="Cars" asp-action="Index" class="btn btn-dark hero-btn">Виж моделите</a>
+        </div>
+    </div>
+</div>
+
+<hr class="section-line" />
+
+<div class="featured-cars">
+    <div class="row g-4">
+        <div class="col-md-6">
+            <div class="car-card">
+                <div class="car-text">
+                    <h4>BMW M4 Coupe</h4>
+                    <p>Спортен дух, модерна визия и впечатляваща динамика.</p>
+                </div>
+                <img src="~/images/m4.jpg" width="300" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="car-card">
+                <div class="car-text">
+                    <h4>BMW X5</h4>
+                    <p>Комфорт, пространство и мощност за всяко пътуване.</p>
+                </div>
+                <img src="~/images/x5.jpg" width="300" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="car-card">
+                <div class="car-text">
+                    <h4>BMW 320d</h4>
+                    <p>Икономичен, елегантен и подходящ за ежедневна употреба.</p>
+                </div>
+                 <img src="~/images/g20.jpeg" width="300" />
+            </div>
+        </div>
+
+        <div class="col-md-6">
+            <div class="car-card">
+                <div class="car-text">
+                    <h4>BMW 530i</h4>
+                    <p>Бизнес класа с изключително удобство и технологичност.</p>
+                </div>
+                <img src="~/images/g30.jpg" width="300" />
+            </div>
+        </div>
+    </div>
 </div>

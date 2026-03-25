@@ -16,6 +16,7 @@ namespace ASPBMWElit.Controllers
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<Client> _userManager;
+        
         public InquiringsController(ApplicationDbContext context,
           UserManager<Client> userManager)
         {

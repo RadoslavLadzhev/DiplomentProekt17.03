@@ -7,8 +7,8 @@ namespace ASPBMWElit.Data
        // public int Id { get; set; }//PK
         public string FirstName { get; set; }
         public string LastName { get; set; }
-        public string Address { get; set; }
-        // 1 : M
+        //public string Address { get; set; }
+        //// 1 : M
         public ICollection<Inquiring> Inquirings { get; set; }
 
     }

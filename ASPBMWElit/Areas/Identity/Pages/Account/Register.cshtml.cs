@@ -118,7 +118,7 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
                     UserName = Input.Username,
                     FirstName = Input.FirstName,
                     LastName = Input.LastName,
-                    Address = Input.Address,
+                  //  Address = Input.Address,
                     PhoneNumber = Input.PhoneNumber
                 };
                 await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
