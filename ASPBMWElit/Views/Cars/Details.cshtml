@@ -1,78 +1,99 @@
 ﻿@model ASPBMWElit.Data.Car
 
 @{
-    ViewData["Title"] = "Details";
+    ViewData["Title"] = "Детайли";
 }
 
-<h1>Details</h1>
+<div class="container mt-5">
+    <div class="row">
 
-<div>
-    <h4>Car</h4>
-    <hr />
-    <dl class="row">
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CatalogNumber)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CatalogNumber)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Model)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Model)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Description)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Description)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.HorsePower)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.HorsePower)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Acceleration)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Acceleration)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.ImageUrl)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.ImageUrl)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Price)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Price)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.CreatedAt)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.CreatedAt)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.FuelTypes)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.FuelTypes.Id)
-        </dd>
-        <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Equipments)
-        </dt>
-        <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Equipments.Id)
-        </dd>
-    </dl>
+      
+        <div class="col-md-6">
+
+           
+            <img id="mainImage" src="@Model.ImageUrl"
+                 style="width:100%; height:350px; object-fit:cover;" class="mb-3" />
+
+          
+            @* <div class="d-flex">
+                <img src="@Model.ImageUrl" class="img-thumbnail me-2"
+                     style="width:90px; cursor:pointer;"
+                     onclick="changeImage(this.src)" />
+
+                <img src="/images/m3e92.jpg" class="img-thumbnail me-2"
+                     style="width:90px; cursor:pointer;"
+                     onclick="changeImage(this.src)" />
+
+                <img src="/images/m3e92gold.jpg" class="img-thumbnail"
+                     style="width:90px; cursor:pointer;"
+                     onclick="changeImage(this.src)" />
+            </div> *@
+
+        </div>
+
+       
+        <div class="col-md-6">
+
+            <h2>@Model.Model</h2>
+            <h4 class="text-success">@Model.Price лв</h4>
+
+            <hr />
+
+            <p><b>Каталожен номер:</b> @Model.CatalogNumber</p>
+            <p><b>Тип:</b> @Model.CarType</p>
+            <p><b>Конски сили:</b> @Model.HorsePower</p>
+            <p><b>Ускорение:</b> @Model.Acceleration</p>
+            <p><b>Вид гориво:</b>@Model.FuelTypes.Id</p>
+            <p><b>Вид оборудване:</b>@Model.Equipments.Id</p>
+            <hr />
+
+          
+            <h5>Описание</h5>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Description)
+            </dd>
+            @* <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.FuelTypes)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.FuelTypes.Id)
+            </dd>
+            <dt class="col-sm-2">
+                @Html.DisplayNameFor(model => model.Equipments)
+            </dt>
+            <dd class="col-sm-10">
+                @Html.DisplayFor(model => model.Equipments.Id)
+            </dd> *@
+           @* <p>@Model.Description</p>*@
+
+            <hr />
+
+           
+            <form asp-action="BookViewing" method="post">
+                <input type="hidden" name="carId" value="@Model.Id" />
+                <button type="submit" class="btn btn-primary">
+                    Запази оглед
+                </button>
+            </form>
+
+            <br />
+
+            @if (User.IsInRole("Admin"))
+            {
+                <a asp-action="Edit" asp-route-id="@Model.Id" class="btn btn-warning">Редакция</a>
+                <a asp-action="Delete" asp-route-id="@Model.Id" class="btn btn-danger">Изтрий</a>
+            }
+
+            <br /><br />
+            <a asp-action="Index" class="btn btn-secondary">Назад</a>
+
+        </div>
+
+    </div>
 </div>
-<div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
-    <a asp-action="Index">Back to List</a>
-</div>
+
+<script>
+    function changeImage(src) {
+        document.getElementById("mainImage").src = src;
+    }
+</script>

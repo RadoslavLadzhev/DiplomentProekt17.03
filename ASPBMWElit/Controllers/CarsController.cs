@@ -108,7 +108,7 @@ namespace ASPBMWElit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("Id,CatalogNumber,Model,EquipmentId,Descpription,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
+        public async Task<IActionResult> Edit(int id, [Bind("Id,CatalogNumber,Model,EquipmentId,Description,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
         {
 
             if (id != car.Id)

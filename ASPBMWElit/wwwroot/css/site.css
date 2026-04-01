@@ -107,3 +107,71 @@ body {
     padding: 18px 0;
     font-size: 14px;
 }
+:root {
+    /* BMW-ish brand blue — коригирай хекса ако имаш точно промоционално значение */
+    --bmw-blue: #0A4DA2;
+    --bmw-blue-dark: #083E86;
+    --content-bg: rgba(255,255,255,0.95);
+    --content-text: #212529;
+}
+
+/* Пълен фон на страницата */
+html, body {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    background-color: var(--bmw-blue);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white; /* основен текст върху синьото */
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Основните контейнерни зони да са бели/заден план за четимост */
+.container,
+.container-fluid,
+main,
+.card,
+.table,
+.form-control,
+.form-select {
+    background-color: var(--content-bg);
+    color: var(--content-text);
+    border-radius: 6px;
+}
+
+/* Някои дребни подобрения върху картите/таблиците */
+.card {
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+}
+
+/* Навигация — лека прозрачност за contrast */
+.navbar, header, footer {
+    background-color: rgba(255,255,255,0.06);
+}
+
+/* Помощни класове, ако искаш локален син фон */
+.bg-bmw {
+    background-color: var(--bmw-blue) !important;
+    color: white !important;
+}
+
+/* Линкове */
+a {
+    color: #0d6efd;
+}
+
+    a:hover, a:focus {
+        color: #0a58ca;
+    }
+
+/* Малки екрани — задаваме малко повече padding */
+@media (max-width: 576px) {
+    .container, .container-fluid {
+        padding: 1rem;
+    }
+}

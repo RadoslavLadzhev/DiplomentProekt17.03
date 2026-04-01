@@ -2,6 +2,9 @@ wwwroot\css\site.css
 wwwroot\favicon.ico
 wwwroot\images\g20.jpeg
 wwwroot\images\g30.jpg
+wwwroot\images\m3.avif
+wwwroot\images\m3e92.jpg
+wwwroot\images\m3e92gold.jpg
 wwwroot\images\m4.jpg
 wwwroot\images\x5.jpg
 wwwroot\js\site.js
