@@ -175,10 +175,26 @@ namespace ASPBMWElit.Controllers
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> BookViewing(int carId)
+        {
+            var inquiry = new Inquiring
+            {
+                CarId = carId,
 
+                CreateAt = DateTime.Now
+            };
+
+            _context.Inquirings.Add(inquiry);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Success", "Home");
+        }
         private bool CarExists(int id)
         {
             return _context.Cars.Any(e => e.Id == id);
         }
+        
     }
 }

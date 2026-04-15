@@ -1,0 +1,67 @@
+﻿@{
+    ViewData["Title"] = "Контакти";
+}
+
+<div class="contacts-page">
+    <div class="contacts-header">
+        <h1>Контакти</h1>
+        <p class="contacts-subtitle">
+            Свържете се с нас при въпроси относно автомобили, оборудване, наличности и поръчки.
+        </p>
+    </div>
+
+    <div class="row contacts-content">
+        <div class="col-lg-5 mb-4">
+            <div class="contacts-info-card">
+                <h3>Информация за връзка</h3>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Адрес</span>
+                    <p>гр. Карлово, ул. Ген. Карцов</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Телефон</span>
+                    <p>+359 88 123 4567</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Имейл</span>
+                    <p>bmwelit@gmail.com</p>
+                </div>
+
+                <div class="contact-info-item">
+                    <span class="contact-label">Работно време</span>
+                    <p>Понеделник - Петък: 09:00 - 18:00</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-7">
+            <div class="contacts-form-card">
+                <h2>Добавяне на коментар</h2>
+
+                <form>
+                    <div class="mb-3">
+                        <label for="name" class="form-label">Име*</label>
+                        <input id="name" name="name" type="text" class="form-control contacts-input" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="email" class="form-label">Имейл*</label>
+                        <input id="email" name="email" type="email" class="form-control contacts-input" />
+                    </div>
+
+                    <div class="mb-3">
+                        <label for="comment" class="form-label">Коментар*</label>
+                        <textarea id="comment" name="comment" rows="6" class="form-control contacts-input"></textarea>
+                    </div>
+
+                    <button type="submit" class="btn btn-primary contacts-btn">
+                        Изпрати
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>

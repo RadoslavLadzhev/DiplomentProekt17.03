@@ -18,6 +18,11 @@ namespace ASPBMWElit.Controllers
             return View();
         }
 
+        public IActionResult Contacts()
+        {
+            return View();
+        }
+
         public IActionResult Privacy()
         {
             return View();
@@ -27,6 +32,10 @@ namespace ASPBMWElit.Controllers
         public IActionResult Error()
         {
             return View(new ErrorViewModel { RequestId = Activity.Current?.Id ?? HttpContext.TraceIdentifier });
+        }
+        public IActionResult Success()
+        {
+            return View();
         }
     }
 }

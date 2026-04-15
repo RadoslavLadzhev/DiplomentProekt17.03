@@ -3,40 +3,60 @@
   "WorkspaceRootPath": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\data\\inquiring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:data\\inquiring.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415085855_MakeMessageNullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260415085855_MakeMessageNullable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:controllers\\carscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\home\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\home\\success.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415084448_FixClientId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20260415084448_FixClientId.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\controllers\\inquiringscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:controllers\\inquiringscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\1212-8\\desktop\\diplomenradoslav\\dimplomen-main\\aspbmwelit\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     }
   ],
   "DocumentGroupContainers": [
@@ -46,41 +66,158 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAA9AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:07:10.298Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ApplicationBuilderExtension.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
+              "RelativeDocumentMoniker": "Services\\ApplicationBuilderExtension.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
+              "RelativeToolTip": "Services\\ApplicationBuilderExtension.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T09:04:30.809Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "20260415085855_MakeMessageNullable.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415085855_MakeMessageNullable.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260415085855_MakeMessageNullable.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415085855_MakeMessageNullable.cs",
+              "RelativeToolTip": "Migrations\\20260415085855_MakeMessageNullable.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T08:58:55.412Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "20260415084448_FixClientId.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415084448_FixClientId.cs",
+              "RelativeDocumentMoniker": "Migrations\\20260415084448_FixClientId.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Migrations\\20260415084448_FixClientId.cs",
+              "RelativeToolTip": "Migrations\\20260415084448_FixClientId.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T08:44:49.018Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAA9wCYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T08:04:18.421Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CarsController.cs",
               "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\CarsController.cs",
               "RelativeDocumentMoniker": "Controllers\\CarsController.cs",
               "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\CarsController.cs",
               "RelativeToolTip": "Controllers\\CarsController.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAcwG4AAABkAAAAAAAAAA==",
+              "ViewState": "AgIAALMAAAAAAAAAAAA1wL0AAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-01T08:02:10.594Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
+              "Title": "Success.cshtml",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Home\\Success.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Success.cshtml",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Home\\Success.cshtml",
+              "RelativeToolTip": "Views\\Home\\Success.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAGAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2026-04-15T08:04:54.08Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAAD4BAAAAAAAAAAAswFcBAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2026-03-25T10:06:59.685Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Inquiring.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Data\\Inquiring.cs",
+              "RelativeDocumentMoniker": "Data\\Inquiring.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Data\\Inquiring.cs",
+              "RelativeToolTip": "Data\\Inquiring.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T07:57:39.577Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Cars\\Details.cshtml",
               "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Details.cshtml",
               "RelativeToolTip": "Views\\Cars\\Details.cshtml",
-              "ViewState": "AgIAAEgAAAAAAAAAAAAAADEAAAAKAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAQwD0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-04-01T07:43:48.21Z",
+              "WhenOpened": "2026-04-15T08:40:28.713Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 10,
+              "Title": "InquiringsController.cs",
+              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\InquiringsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\InquiringsController.cs",
+              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Controllers\\InquiringsController.cs",
+              "RelativeToolTip": "Controllers\\InquiringsController.cs",
+              "ViewState": "AgIAADkAAAAAAAAAAAAawEQAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-15T08:42:21.593Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Cars\\Create.cshtml",
@@ -93,33 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Cars\\Index.cshtml",
-              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Cars\\Index.cshtml",
-              "RelativeToolTip": "Views\\Cars\\Index.cshtml",
-              "ViewState": "AgIAACoAAAAAAAAAAAAAAAYAAAATAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-30T08:57:21.019Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAGMAAAAAAAAAAAAswHEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2026-03-25T10:06:59.685Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 13,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -127,45 +238,20 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-03-25T09:53:15.709Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-25T09:53:15.709Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 12,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAADMAAAAAAAAAAADwvz8AAAA3AAAAAAAAAA==",
+              "ViewState": "AgIAABoAAAAAAAAAAAAmwCwAAAB2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-03-25T09:43:39.326Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAACEAAAAAAAAAAAAgwCcAAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T08:53:28.618Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "ApplicationBuilderExtension.cs",
-              "DocumentMoniker": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
-              "RelativeDocumentMoniker": "Services\\ApplicationBuilderExtension.cs",
-              "ToolTip": "C:\\Users\\1212-8\\Desktop\\diplomenradoslav\\Dimplomen-main\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
-              "RelativeToolTip": "Services\\ApplicationBuilderExtension.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAUAAAAYAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-25T08:47:05.921Z"
             }
           ]
         }

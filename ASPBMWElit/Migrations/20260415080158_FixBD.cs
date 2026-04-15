@@ -6,7 +6,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace ASPBMWElit.Migrations
 {
     /// <inheritdoc />
-    public partial class BMWSila : Migration
+    public partial class FixBD : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -32,7 +32,6 @@ namespace ASPBMWElit.Migrations
                     Id = table.Column<string>(type: "nvarchar(450)", nullable: false),
                     FirstName = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     UserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     NormalizedUserName = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
                     Email = table.Column<string>(type: "nvarchar(256)", maxLength: 256, nullable: true),
@@ -187,29 +186,6 @@ namespace ASPBMWElit.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Inquirings",
-                columns: table => new
-                {
-                    Id = table.Column<int>(type: "int", nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
-                    ClientId = table.Column<string>(type: "nvarchar(450)", nullable: false),
-                    CarId = table.Column<int>(type: "int", nullable: false),
-                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    InspectionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
-                    CreateAt = table.Column<int>(type: "int", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Inquirings", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Inquirings_AspNetUsers_ClientId",
-                        column: x => x.ClientId,
-                        principalTable: "AspNetUsers",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
                 name: "Equipments",
                 columns: table => new
                 {
@@ -241,14 +217,14 @@ namespace ASPBMWElit.Migrations
                     CatalogNumber = table.Column<int>(type: "int", nullable: false),
                     Model = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     EquipmentId = table.Column<int>(type: "int", nullable: false),
-                    Descpription = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Description = table.Column<string>(type: "nvarchar(max)", nullable: true),
+                    CarType = table.Column<int>(type: "int", nullable: false),
                     FuelTypeId = table.Column<int>(type: "int", nullable: false),
                     HorsePower = table.Column<int>(type: "int", nullable: false),
                     Acceleration = table.Column<double>(type: "float", nullable: false),
                     ImageUrl = table.Column<string>(type: "nvarchar(max)", nullable: false),
                     Price = table.Column<double>(type: "float", nullable: false),
-                    CreatedAt = table.Column<int>(type: "int", nullable: false),
-                    InquiringsId = table.Column<int>(type: "int", nullable: false)
+                    CreatedAt = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -265,10 +241,33 @@ namespace ASPBMWElit.Migrations
                         principalTable: "FuelTypes",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Inquirings",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    ClientId = table.Column<string>(type: "nvarchar(450)", nullable: false),
+                    CarId = table.Column<int>(type: "int", nullable: false),
+                    Message = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    InspectionDate = table.Column<DateTime>(type: "datetime2", nullable: false),
+                    CreateAt = table.Column<DateTime>(type: "datetime2", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Inquirings", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Cars_Inquirings_InquiringsId",
-                        column: x => x.InquiringsId,
-                        principalTable: "Inquirings",
+                        name: "FK_Inquirings_AspNetUsers_ClientId",
+                        column: x => x.ClientId,
+                        principalTable: "AspNetUsers",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
+                        name: "FK_Inquirings_Cars_CarId",
+                        column: x => x.CarId,
+                        principalTable: "Cars",
                         principalColumn: "Id",
                         onDelete: ReferentialAction.Cascade);
                 });
@@ -323,15 +322,15 @@ namespace ASPBMWElit.Migrations
                 column: "FuelTypeId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Cars_InquiringsId",
-                table: "Cars",
-                column: "InquiringsId");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Equipments_EquipmentTypeID",
                 table: "Equipments",
                 column: "EquipmentTypeID",
                 unique: true);
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Inquirings_CarId",
+                table: "Inquirings",
+                column: "CarId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Inquirings_ClientId",
@@ -358,10 +357,16 @@ namespace ASPBMWElit.Migrations
                 name: "AspNetUserTokens");
 
             migrationBuilder.DropTable(
-                name: "Cars");
+                name: "Inquirings");
 
             migrationBuilder.DropTable(
                 name: "AspNetRoles");
+
+            migrationBuilder.DropTable(
+                name: "AspNetUsers");
+
+            migrationBuilder.DropTable(
+                name: "Cars");
 
             migrationBuilder.DropTable(
                 name: "Equipments");
@@ -370,13 +375,7 @@ namespace ASPBMWElit.Migrations
                 name: "FuelTypes");
 
             migrationBuilder.DropTable(
-                name: "Inquirings");
-
-            migrationBuilder.DropTable(
                 name: "EquipmentTypes");
-
-            migrationBuilder.DropTable(
-                name: "AspNetUsers");
         }
     }
 }

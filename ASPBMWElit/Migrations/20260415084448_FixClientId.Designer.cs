@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPBMWElit.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260311093646_FixCarInquiringRelations")]
-    partial class FixCarInquiringRelations
+    [Migration("20260415084448_FixClientId")]
+    partial class FixClientId
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -36,14 +36,16 @@ namespace ASPBMWElit.Migrations
                     b.Property<double>("Acceleration")
                         .HasColumnType("float");
 
+                    b.Property<int>("CarType")
+                        .HasColumnType("int");
+
                     b.Property<int>("CatalogNumber")
                         .HasColumnType("int");
 
                     b.Property<int>("CreatedAt")
                         .HasColumnType("int");
 
-                    b.Property<string>("Descpription")
-                        .IsRequired()
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("EquipmentId")
@@ -82,10 +84,6 @@ namespace ASPBMWElit.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -235,11 +233,10 @@ namespace ASPBMWElit.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ClientId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CreateAt")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("InspectionDate")
                         .HasColumnType("datetime2");
@@ -427,16 +424,14 @@ namespace ASPBMWElit.Migrations
             modelBuilder.Entity("ASPBMWElit.Data.Inquiring", b =>
                 {
                     b.HasOne("ASPBMWElit.Data.Car", "Cars")
-                        .WithMany()
+                        .WithMany("Inquirings")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.HasOne("ASPBMWElit.Data.Client", "Client")
                         .WithMany("Inquirings")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ClientId");
 
                     b.Navigation("Cars");
 
@@ -492,6 +487,11 @@ namespace ASPBMWElit.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ASPBMWElit.Data.Car", b =>
+                {
+                    b.Navigation("Inquirings");
                 });
 
             modelBuilder.Entity("ASPBMWElit.Data.Client", b =>

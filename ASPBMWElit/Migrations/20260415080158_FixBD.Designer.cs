@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ASPBMWElit.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20260311095023_AddCarTypeToCar")]
-    partial class AddCarTypeToCar
+    [Migration("20260415080158_FixBD")]
+    partial class FixBD
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -45,8 +45,7 @@ namespace ASPBMWElit.Migrations
                     b.Property<int>("CreatedAt")
                         .HasColumnType("int");
 
-                    b.Property<string>("Descpription")
-                        .IsRequired()
+                    b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("EquipmentId")
@@ -85,10 +84,6 @@ namespace ASPBMWElit.Migrations
 
                     b.Property<int>("AccessFailedCount")
                         .HasColumnType("int");
-
-                    b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("ConcurrencyStamp")
                         .IsConcurrencyToken()
@@ -241,8 +236,8 @@ namespace ASPBMWElit.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CreateAt")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("InspectionDate")
                         .HasColumnType("datetime2");
@@ -430,7 +425,7 @@ namespace ASPBMWElit.Migrations
             modelBuilder.Entity("ASPBMWElit.Data.Inquiring", b =>
                 {
                     b.HasOne("ASPBMWElit.Data.Car", "Cars")
-                        .WithMany()
+                        .WithMany("Inquirings")
                         .HasForeignKey("CarId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -495,6 +490,11 @@ namespace ASPBMWElit.Migrations
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("ASPBMWElit.Data.Car", b =>
+                {
+                    b.Navigation("Inquirings");
                 });
 
             modelBuilder.Entity("ASPBMWElit.Data.Client", b =>

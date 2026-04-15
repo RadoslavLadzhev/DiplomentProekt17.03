@@ -230,17 +230,15 @@ namespace ASPBMWElit.Migrations
                         .HasColumnType("int");
 
                     b.Property<string>("ClientId")
-                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
-                    b.Property<int>("CreateAt")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreateAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<DateTime>("InspectionDate")
                         .HasColumnType("datetime2");
 
                     b.Property<string>("Message")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.HasKey("Id");
@@ -429,9 +427,7 @@ namespace ASPBMWElit.Migrations
 
                     b.HasOne("ASPBMWElit.Data.Client", "Client")
                         .WithMany("Inquirings")
-                        .HasForeignKey("ClientId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
+                        .HasForeignKey("ClientId");
 
                     b.Navigation("Cars");
 
