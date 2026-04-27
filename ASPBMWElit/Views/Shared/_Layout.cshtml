@@ -25,11 +25,11 @@
                         </div>
 
                         <div class="top-icons d-flex align-items-center gap-3">
-                            <a href="#" class="text-dark"><i class="fa-solid fa-location-dot"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-solid fa-phone"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-regular fa-envelope"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-regular fa-user"></i></a>
-                            <a href="#" class="text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-location-dot"></i></a>
+                            <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-phone"></i></a>
+@*                             <a href="/Contacts" class="text-dark"><i class="fa-regular fa-envelope"></i></a> *@
+                            <a href="/Identity/Account/Manage" class="text-dark"><i class="fa-regular fa-user"></i></a>
+                            <a href="/Cars" class="text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                     </div>
 
@@ -41,6 +41,23 @@
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Cars" asp-action="Index">Автомобили</a>
                             </li>
+                            @if (User.IsInRole("Admin"))
+                            {
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="Inquirings" asp-action="Index">Заявки</a>
+                                </li>
+
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="Equipments" asp-action="Index">Оборудване</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="EquipmentTypes" asp-action="Index">Видове оборудване</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link text-dark" asp-controller="FuelTypes" asp-action="Index">Видове гориво</a>
+                                </li>
+                            }
+
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Контакти</a>
                             </li>

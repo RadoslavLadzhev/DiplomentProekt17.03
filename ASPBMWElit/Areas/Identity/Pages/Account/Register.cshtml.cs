@@ -72,9 +72,7 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
-            [Required]
-            [Display(Name = "Address")]
-            public string Address { get; set; }
+            
 
             [Required]
             [Phone]
@@ -116,19 +114,20 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
                 Client user = new Client
                 {
                     UserName = Input.Username,
+                    Email = Input.Email,
                     FirstName = Input.FirstName,
                     LastName = Input.LastName,
-                  //  Address = Input.Address,
                     PhoneNumber = Input.PhoneNumber
                 };
-                await _userStore.SetUserNameAsync(user, Input.Email, CancellationToken.None);
+                await _userStore.SetUserNameAsync(user, Input.Username, CancellationToken.None);
                 await _emailStore.SetEmailAsync(user, Input.Email, CancellationToken.None);
                 var result = await _userManager.CreateAsync(user, Input.Password);
 
                 if (result.Succeeded)
                 {
+                    
                     _logger.LogInformation("User created a new account with password.");
-                    await _userManager.AddToRoleAsync(user, "Client");
+                    await _userManager.AddToRoleAsync(user, "User");
                     var userId = await _userManager.GetUserIdAsync(user);
                     var code = await _userManager.GenerateEmailConfirmationTokenAsync(user);
                     code = WebEncoders.Base64UrlEncode(Encoding.UTF8.GetBytes(code));

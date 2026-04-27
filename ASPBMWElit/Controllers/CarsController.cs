@@ -49,7 +49,7 @@ namespace ASPBMWElit.Controllers
 
             return View(car);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Cars/Create
         public IActionResult Create()
         {
@@ -64,6 +64,7 @@ namespace ASPBMWElit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+      
         public async Task<IActionResult> Create([Bind("Name,CatalogNumber,Model,EquipmentId,Descpription,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
         {
 
@@ -84,7 +85,7 @@ namespace ASPBMWElit.Controllers
             ViewData["CarType"] = new SelectList(Enum.GetValues(typeof(TypeAuto)), car.CarType);
             return View(car);
         }
-
+        [Authorize(Roles = "Admin")]
         // GET: Cars/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
@@ -108,6 +109,7 @@ namespace ASPBMWElit.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
+    
         public async Task<IActionResult> Edit(int id, [Bind("Id,CatalogNumber,Model,EquipmentId,Description,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
         {
 
@@ -140,8 +142,9 @@ namespace ASPBMWElit.Controllers
             ViewData["FuelTypeId"] = new SelectList(_context.FuelTypes, "Id", "Name", car.FuelTypeId);
             return View(car);
         }
-
+        
         // GET: Cars/Delete/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -162,8 +165,9 @@ namespace ASPBMWElit.Controllers
         }
 
         // POST: Cars/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost]
         [ValidateAntiForgeryToken]
+     
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var car = await _context.Cars.FindAsync(id);

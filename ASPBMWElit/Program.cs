@@ -46,7 +46,7 @@ namespace ASPBMWElit
 
             app.UseAuthentication();
             app.UseAuthorization();
-
+            //асд
            
             app.MapControllerRoute(
                 name: "default",
