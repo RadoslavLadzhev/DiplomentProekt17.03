@@ -65,7 +65,7 @@ namespace ASPBMWElit.Controllers
         [HttpPost]
         [ValidateAntiForgeryToken]
       
-        public async Task<IActionResult> Create([Bind("Name,CatalogNumber,Model,EquipmentId,Descpription,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
+        public async Task<IActionResult> Create([Bind("Name,CatalogNumber,Model,EquipmentId,Description,FuelTypeId,HorsePower,Acceleration,ImageUrl,Price,CreatedAt")] Car car)
         {
 
             if (!await _context.Equipments.AnyAsync(e => e.Id == car.EquipmentId))
@@ -76,8 +76,9 @@ namespace ASPBMWElit.Controllers
 
             if (ModelState.IsValid)
             {
+                car.CreatedAt = DateTime.Now;
                 _context.Add(car);
-                await _context.SaveChangesAsync(); // Тук вече няма да пада
+                await _context.SaveChangesAsync(); 
                 return RedirectToAction(nameof(Index));
             }
             ViewData["EquipmentId"] = new SelectList(_context.Equipments, "Id", "Name", car.EquipmentId);
@@ -165,9 +166,8 @@ namespace ASPBMWElit.Controllers
         }
 
         // POST: Cars/Delete/5
-        [HttpPost]
+        [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-     
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var car = await _context.Cars.FindAsync(id);

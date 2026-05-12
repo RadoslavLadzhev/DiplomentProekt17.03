@@ -12,7 +12,7 @@ using System.Threading.Tasks;
 namespace ASPBMWElit.Controllers
 {
     [Authorize]
-    [Authorize(Roles = "Admin")]
+   // [Authorize(Roles = "Admin")]
     public class InquiringsController : Controller
     {
         private readonly ApplicationDbContext _context;
@@ -28,8 +28,19 @@ namespace ASPBMWElit.Controllers
         // GET: Inquirings
         public async Task<IActionResult> Index()
         {
-            var applicationDbContext = _context.Inquirings.Include(i => i.Client);
-            return View(await applicationDbContext.ToListAsync());
+            var query = _context.Inquirings
+                .Include(i => i.Client)
+                .Include(i => i.Cars)
+                .AsQueryable();
+
+            if (!User.IsInRole("Admin"))
+            {
+                var userId = _userManager.GetUserId(User);
+
+                query = query.Where(i => i.ClientId == userId);
+            }
+
+            return View(await query.ToListAsync());
         }
 
         // GET: Inquirings/Details/5
@@ -40,9 +51,19 @@ namespace ASPBMWElit.Controllers
                 return NotFound();
             }
 
-            var inquiring = await _context.Inquirings
+            var query = _context.Inquirings
                 .Include(i => i.Client)
-                .FirstOrDefaultAsync(m => m.Id == id);
+                .Include(i => i.Cars)
+                .AsQueryable();
+
+            if (!User.IsInRole("Admin"))
+            {
+                var userId = _userManager.GetUserId(User);
+                query = query.Where(i => i.ClientId == userId);
+            }
+
+            var inquiring = await query.FirstOrDefaultAsync(i => i.Id == id);
+
             if (inquiring == null)
             {
                 return NotFound();
@@ -52,10 +73,11 @@ namespace ASPBMWElit.Controllers
         }
 
         // GET: Inquirings/Create
-        public IActionResult Create()
+        [Authorize]
+        public IActionResult Create(int? carId)
         {
-            ViewData["CarId"]=new SelectList(_context.Cars, "Id", "Model");
-            //ViewData["ClientId"] = new SelectList(_context.Clients, "Id", "Id");
+            ViewData["CarId"] = new SelectList(_context.Cars, "Id", "Model", carId);
+
             return View();
         }
 
@@ -66,7 +88,7 @@ namespace ASPBMWElit.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,ClientId,CarId,Message,InspectionDate,CreateAt")] Inquiring inquiring)
         {
-            inquiring.InspectionDate = DateTime.Now;
+            inquiring.CreateAt = DateTime.Now;
             inquiring.ClientId = _userManager.GetUserId(User);
 
           
@@ -89,6 +111,7 @@ namespace ASPBMWElit.Controllers
         }
 
         // GET: Inquirings/Edit/5
+        [Authorize(Roles = "Admin")]
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)

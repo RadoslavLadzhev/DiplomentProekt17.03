@@ -14,7 +14,7 @@
             @Html.DisplayNameFor(model => model.Client)
         </dt>
         <dd class = "col-sm-10">
-            @Html.DisplayFor(model => model.Client.Id)
+            @Html.DisplayFor(model => model.Client.UserName)
         </dd>
         <dt class = "col-sm-2">
             @Html.DisplayNameFor(model => model.CarId)
@@ -43,6 +43,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> |
+    @if (User.IsInRole("Admin"))
+                    {
+    <a asp-action="Edit" asp-route-id="@Model?.Id">Edit</a> 
+                    }
     <a asp-action="Index">Back to List</a>
 </div>

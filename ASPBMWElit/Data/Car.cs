@@ -22,7 +22,7 @@
         public double Acceleration { get; set; }
         public string ImageUrl { get; set; }
         public double Price { get; set; }
-        public int CreatedAt { get; set; }
+        public DateTime CreatedAt { get; set; }
         //1:M
         public ICollection<Inquiring> Inquirings { get; set; }
 

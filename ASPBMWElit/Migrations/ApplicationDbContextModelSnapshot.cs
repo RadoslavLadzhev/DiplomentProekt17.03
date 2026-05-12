@@ -39,8 +39,8 @@ namespace ASPBMWElit.Migrations
                     b.Property<int>("CatalogNumber")
                         .HasColumnType("int");
 
-                    b.Property<int>("CreatedAt")
-                        .HasColumnType("int");
+                    b.Property<DateTime>("CreatedAt")
+                        .HasColumnType("datetime2");
 
                     b.Property<string>("Description")
                         .HasColumnType("nvarchar(max)");

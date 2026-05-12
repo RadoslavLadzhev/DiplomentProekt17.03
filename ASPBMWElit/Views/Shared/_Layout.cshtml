@@ -12,7 +12,16 @@
     <header>
         <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand fw-bold" asp-controller="Home" asp-action="Index">BMW Елит</a>
+                <a class="navbar-brand d-flex align-items-center"
+                   asp-area=""
+                   asp-controller="Home"
+                   asp-action="Index">
+
+                    <img src="~/images/logo.png"
+                         style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-right:10px;" />
+
+                    <span>BMW Елит</span>
+                </a>
 
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
                     <span class="navbar-toggler-icon"></span>
@@ -27,9 +36,9 @@
                         <div class="top-icons d-flex align-items-center gap-3">
                             <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-location-dot"></i></a>
                             <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-phone"></i></a>
-@*                             <a href="/Contacts" class="text-dark"><i class="fa-regular fa-envelope"></i></a> *@
+
                             <a href="/Identity/Account/Manage" class="text-dark"><i class="fa-regular fa-user"></i></a>
-                            <a href="/Cars" class="text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
+                            <a href="/Inquirings" class="text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
                         </div>
                     </div>
 
@@ -40,12 +49,13 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-dark" asp-controller="Cars" asp-action="Index">Автомобили</a>
-                            </li>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Inquirings" asp-action="Index">Заявки</a>
+							</li>
                             @if (User.IsInRole("Admin"))
                             {
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="Inquirings" asp-action="Index">Заявки</a>
-                                </li>
+                                
 
                                 <li class="nav-item">
                                     <a class="nav-link text-dark" asp-controller="Equipments" asp-action="Index">Оборудване</a>
