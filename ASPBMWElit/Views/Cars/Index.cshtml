@@ -143,14 +143,14 @@
 
                                 <div class="d-flex gap-2 justify-content-end">
 
-                                    @if (User.IsInRole("Admin"))
+                                    @* @if (User.IsInRole("Admin"))
                                     {
                                         <a asp-action="Edit"
                                            asp-route-id="@item.Id"
                                            class="btn btn-warning btn-sm">
                                             Редактирай
                                         </a>
-                                    }
+                                    } *@
 
                                     <a asp-action="Details"
                                        asp-route-id="@item.Id"
@@ -158,14 +158,14 @@
                                         Детайли
                                     </a>
 
-                                    @if (User.IsInRole("Admin"))
+                                    @* @if (User.IsInRole("Admin"))
                                     {
                                         <a asp-action="Delete"
                                            asp-route-id="@item.Id"
                                            class="btn btn-danger btn-sm">
                                             Изтрий
                                         </a>
-                                    }
+                                    } *@
 
                                 </div>
 
