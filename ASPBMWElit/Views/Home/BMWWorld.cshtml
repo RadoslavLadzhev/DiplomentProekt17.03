@@ -1,0 +1,148 @@
+﻿@{
+    ViewData["Title"] = "Светът на BMW";
+}
+
+<section class="bmw-world-hero-video">
+   
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="/images/m4ka.mp4" type="video/mp4">
+    </video>
+
+    <div class="bmw-world-overlay"></div>
+
+    <div class="bmw-world-content">
+
+        <h1>Светът на BMW</h1>
+
+        <p>
+            Открийте динамиката, технологиите и усещането зад BMW.
+        </p>
+
+        <a asp-controller="Cars"
+           asp-action="Index"
+           class="btn btn-primary btn-lg">
+            Разгледай автомобилите
+        </a>
+
+    </div>
+
+</section>
+
+<section class="container my-5">
+
+    <div class="text-center mb-5">
+
+        <h2 class="fw-bold">BMW преживяване</h2>
+
+        <p class="text-muted">
+            Всичко, което прави BMW различно.
+        </p>
+
+    </div>
+
+    <div class="row g-4">
+
+        <div class="col-md-4">
+
+            <div class="bmw-card h-100">
+
+                <img src="/images/bmwm2.jpg" class="img-fluid rounded-top" />
+
+                <div class="p-4">
+
+                    <h4>BMW M</h4>
+
+                    <p>
+                        Спортна мощност, агресивен дизайн и истинско M усещане.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="bmw-card h-100">
+
+                <img src="/images/g90.webp" class="img-fluid rounded-top" />
+
+                <div class="p-4">
+
+                    <h4>Лукс и комфорт</h4>
+
+                    <p>
+                        Премиум интериор, модерни технологии и максимален комфорт.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-4">
+
+            <div class="bmw-card h-100">
+
+                <img src="/images/i88.webp" class="img-fluid rounded-top" />
+
+                <div class="p-4">
+
+                    <h4>Електрическо бъдеще</h4>
+
+                    <p>
+                        Новото поколение BMW електрически автомобили и иновации.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<section class="bmw-info-section">
+
+    <div class="container">
+
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+
+                <img src="/images/BMW-E60-M5.jpg"
+                     class="img-fluid rounded-4 shadow-lg" />
+
+            </div>
+
+            <div class="col-md-6">
+
+                <h2 class="fw-bold mb-4">
+                    Удоволствие от шофирането
+                </h2>
+
+                <p class="lead text-muted">
+                    BMW съчетава динамика, иновации и емоция зад волана.
+                </p>
+
+                <p>
+                    Всеки модел е създаден с внимание към детайла и истинско усещане за контрол.
+                </p>
+
+                <a asp-controller="Cars"
+                   asp-action="Index"
+                   class="btn btn-dark btn-lg mt-3">
+                    Виж автомобилите
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>

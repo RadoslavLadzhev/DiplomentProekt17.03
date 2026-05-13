@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ASPBMWElit")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+3d4aee5ff57505282db340c7b83481cabb7a386d")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b50f34752c1520158d4deb6411781e9b26d8bc09")]
 [assembly: System.Reflection.AssemblyProductAttribute("ASPBMWElit")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ASPBMWElit")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

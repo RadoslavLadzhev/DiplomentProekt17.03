@@ -5,7 +5,7 @@
 <section class="hero">
 
     <video autoplay muted loop playsinline class="bg-video">
-        <source src="images/bmw.mp4" type="video/mp4">
+        <source src="/images/bmw.mp4" type="video/mp4">
     </video>
 
     <div class="overlay"></div>
@@ -15,7 +15,11 @@
 
         <p>ПОЧИТ КЪМ ОТДАДЕНОСТТА.</p>
 
-        <a href="#" class="btn">Открийте сега</a>
+        <a asp-controller="Cars"
+           asp-action="Index"
+           class="btn">
+            Открийте сега
+        </a>
     </div>
 
 </section>

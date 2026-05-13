@@ -13,8 +13,20 @@
       "PackagePath": "staticwebassets\\favicon.ico"
     },
     {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\BMW-E60-M5.jpg",
+      "PackagePath": "staticwebassets\\images\\BMW-E60-M5.jpg"
+    },
+    {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\bmw.mp4",
       "PackagePath": "staticwebassets\\images\\bmw.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\bmwm2.jpg",
+      "PackagePath": "staticwebassets\\images\\bmwm2.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\bmwm5g90.webp",
+      "PackagePath": "staticwebassets\\images\\bmwm5g90.webp"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\g20.jpeg",
@@ -23,6 +35,22 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\g30.jpg",
       "PackagePath": "staticwebassets\\images\\g30.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\g90.webp",
+      "PackagePath": "staticwebassets\\images\\g90.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\i8.avif",
+      "PackagePath": "staticwebassets\\images\\i8.avif"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\i88.webp",
+      "PackagePath": "staticwebassets\\images\\i88.webp"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\kusae90.mp4",
+      "PackagePath": "staticwebassets\\images\\kusae90.mp4"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\logo.png",
@@ -43,6 +71,14 @@
     {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\m4.jpg",
       "PackagePath": "staticwebassets\\images\\m4.jpg"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\m4ka.mp4",
+      "PackagePath": "staticwebassets\\images\\m4ka.mp4"
+    },
+    {
+      "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\m5e60.avif",
+      "PackagePath": "staticwebassets\\images\\m5e60.avif"
     },
     {
       "Id": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\images\\x5.jpg",
