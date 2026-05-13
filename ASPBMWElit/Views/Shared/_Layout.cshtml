@@ -1,99 +1,99 @@
 ﻿<!DOCTYPE html>
 <html lang="bg">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - BMW Елит</title>
-    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>@ViewData["Title"] - BMW Елит</title>
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+	<link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand d-flex align-items-center"
-                   asp-area=""
-                   asp-controller="Home"
-                   asp-action="Index">
+	<header>
+		<nav class="navbar navbar-expand-lg navbar-light bg-white border-bottom box-shadow mb-3">
+			<div class="container">
+				<a class="navbar-brand d-flex align-items-center"
+				   asp-area=""
+				   asp-controller="Home"
+				   asp-action="Index">
 
-                    <img src="~/images/logo.png"
-                         style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-right:10px;" />
+					<img src="~/images/logo.png"
+						 style="width:50px;height:50px;border-radius:50%;object-fit:cover;margin-right:10px;" />
 
-                    <span>BMW Елит</span>
-                </a>
+					<span>BMW Елит</span>
+				</a>
 
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse">
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-                <div class="navbar-collapse collapse d-lg-flex flex-column w-100">
-                    <div class="top-bar d-flex justify-content-between align-items-center w-100 py-2">
-                        <div class="search-box">
-                            <input type="text" class="form-control" placeholder="Търсене..." />
-                        </div>
+				<div class="navbar-collapse collapse d-lg-flex flex-column w-100">
+					<div class="top-bar d-flex justify-content-between align-items-center w-100 py-2">
+						<div class="search-box">
+							<input type="text" class="form-control" placeholder="Търсене..." />
+						</div>
 
-                        <div class="top-icons d-flex align-items-center gap-3">
-                            <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-location-dot"></i></a>
-                            <a href="/Home/Contacts" class="text-dark"><i class="fa-solid fa-phone"></i></a>
+						<div class="top-icons d-flex align-items-center gap-3">
+							<a href="/Home/Contacts" class="text-dark"><i class="bi bi-wrench-adjustable"></i></a>
+							<a href="/Home/Contacts" class="text-dark"><i class="bi bi-telephone"></i></a>
 
-                            <a href="/Identity/Account/Manage" class="text-dark"><i class="fa-regular fa-user"></i></a>
-                            <a href="/Inquirings" class="text-dark"><i class="fa-solid fa-cart-shopping"></i></a>
-                        </div>
-                    </div>
+							<a href="/Identity/Account/Manage" class="text-dark"><i class="bi bi-person-circle"></i></a>
+							<a href="/Inquirings" class="text-dark"><i class="bi bi-car-front-fill"></i></a>
+						</div>
+					</div>
 
-                    <div class="menu-bar w-100">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Начало</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Cars" asp-action="Index">Автомобили</a>
+					<div class="menu-bar w-100">
+						<ul class="navbar-nav">
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Home" asp-action="Index">Начало</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Cars" asp-action="Index">Автомобили</a>
 							</li>
 							<li class="nav-item">
 								<a class="nav-link text-dark" asp-controller="Inquirings" asp-action="Index">Заявки</a>
 							</li>
-                            @if (User.IsInRole("Admin"))
-                            {
-                                
+							@if (User.IsInRole("Admin"))
+							{
 
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="Equipments" asp-action="Index">Оборудване</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="EquipmentTypes" asp-action="Index">Видове оборудване</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link text-dark" asp-controller="FuelTypes" asp-action="Index">Видове гориво</a>
-                                </li>
-                            }
 
-                            <li class="nav-item">
-                                <a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Контакти</a>
-                            </li>
-                        </ul>
+								<li class="nav-item">
+									<a class="nav-link text-dark" asp-controller="Equipments" asp-action="Index">Оборудване</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" asp-controller="EquipmentTypes" asp-action="Index">Видове оборудване</a>
+								</li>
+								<li class="nav-item">
+									<a class="nav-link text-dark" asp-controller="FuelTypes" asp-action="Index">Видове гориво</a>
+								</li>
+							}
 
-                        <div class="ms-auto">
-                            <partial name="_LoginPartial" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </nav>
-    </header>
-    <main role="main">
-        @RenderBody()
-    </main>
+							<li class="nav-item">
+								<a class="nav-link text-dark" asp-controller="Home" asp-action="Contacts">Контакти и сервиз</a>
+							</li>
+						</ul>
 
-    <footer class="border-top footer site-footer mt-4">
-        <div class="container d-flex justify-content-between">
-            <span>Всички права запазени © 2026 BMW AG</span>
-            <a asp-controller="Home" asp-action="Index">Върни се в началото</a>
-        </div>
-    </footer>
+						<div class="ms-auto">
+							<partial name="_LoginPartial" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main role="main">
+		@RenderBody()
+	</main>
 
-    <script src="~/lib/jquery/dist/jquery.min.js"></script>
-    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-    @await RenderSectionAsync("Scripts", required: false)
+	<footer class="border-top footer site-footer mt-4">
+		<div class="container d-flex justify-content-between">
+			<span>Всички права запазени © 2026 BMW AG</span>
+			<a asp-controller="Home" asp-action="Index">Върни се в началото</a>
+		</div>
+	</footer>
+
+	<script src="~/lib/jquery/dist/jquery.min.js"></script>
+	<script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+	@await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

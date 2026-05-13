@@ -3,20 +3,8 @@
   "WorkspaceRootPath": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\inquirings\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -25,6 +13,18 @@
     {
       "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\cars\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:services\\applicationbuilderextension.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B70C687B-A224-4763-9523-64B73A1E1A42}|ASPBMWElit.csproj|c:\\users\\admin\\desktop\\nainovdiplomentproekt17.03\\aspbmwelit\\views\\inquirings\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -46,24 +46,24 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "site.css",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\css\\site.css",
               "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\wwwroot\\css\\site.css",
               "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAAGUBAAAAAAAAAAAAAIgBAAABAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAI4BAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2026-05-13T08:04:41.855Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Views\\Home\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
@@ -71,12 +71,11 @@
               "RelativeToolTip": "Views\\Home\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-13T08:02:21.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-05-13T08:02:21.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 2,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Views\\Cars\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Cars\\Details.cshtml",
@@ -84,11 +83,12 @@
               "RelativeToolTip": "Views\\Cars\\Details.cshtml",
               "ViewState": "AgIAABcAAAAAAAAAAAAAACkAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-12T21:32:10.64Z"
+              "WhenOpened": "2026-05-12T21:32:10.64Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Details.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Views\\Inquirings\\Details.cshtml",
               "RelativeDocumentMoniker": "Views\\Inquirings\\Details.cshtml",
@@ -96,7 +96,8 @@
               "RelativeToolTip": "Views\\Inquirings\\Details.cshtml",
               "ViewState": "AgIAABUAAAAAAAAAAAAAAC8AAAA8AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2026-05-12T21:28:41.069Z"
+              "WhenOpened": "2026-05-12T21:28:41.069Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
@@ -124,26 +125,26 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Views\\Shared\\_Layout.cshtml",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFUAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAABEAAAAAAAAAAAAuwCgAAABNAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2026-05-12T21:21:06.891Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "ApplicationBuilderExtension.cs",
               "DocumentMoniker": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
               "RelativeDocumentMoniker": "Services\\ApplicationBuilderExtension.cs",
               "ToolTip": "C:\\Users\\Admin\\Desktop\\NaiNovDiplomentProekt17.03\\ASPBMWElit\\Services\\ApplicationBuilderExtension.cs",
               "RelativeToolTip": "Services\\ApplicationBuilderExtension.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAABSAAAAAAAAAA==",
+              "ViewState": "AgIAACQAAAAAAAAAAAAowDkAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-05-12T21:05:32.894Z",
               "EditorCaption": ""

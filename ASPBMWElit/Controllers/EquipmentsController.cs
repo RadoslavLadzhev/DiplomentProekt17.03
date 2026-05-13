@@ -49,7 +49,7 @@ namespace ASPBMWElit.Controllers
         // GET: Equipments/Create
         public IActionResult Create()
         {
-            ViewData["EquipmentTypeID"] = new SelectList(_context.EquipmentTypes, "Id", "Id");
+            ViewData["EquipmentTypeID"] = new SelectList(_context.EquipmentTypes, "Id", "Name");
             return View();
         }
 

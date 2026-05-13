@@ -1,67 +1,87 @@
 ﻿@{
-    ViewData["Title"] = "Контакти";
+    ViewData["Title"] = "Контакти и сервиз";
 }
 
-<div class="contacts-page">
-    <div class="contacts-header">
-        <h1>Контакти</h1>
-        <p class="contacts-subtitle">
-            Свържете се с нас при въпроси относно автомобили, оборудване, наличности и поръчки.
-        </p>
+<section class="service-hero">
+    <div class="service-overlay"></div>
+
+    <div class="service-content">
+        <h1>Сервизен партньор на BMW.</h1>
+        <p>Спокойно. Ние ще се погрижим.</p>
+
+        <a href="#contact-form" class="btn btn-primary btn-lg">
+            Свържете се с нас
+        </a>
     </div>
+</section>
 
-    <div class="row contacts-content">
-        <div class="col-lg-5 mb-4">
-            <div class="contacts-info-card">
-                <h3>Информация за връзка</h3>
+<section class="contact-section">
+    <div class="container">
 
-                <div class="contact-info-item">
-                    <span class="contact-label">Адрес</span>
-                    <p>гр. Карлово, ул. Ген. Карцов</p>
-                </div>
-
-                <div class="contact-info-item">
-                    <span class="contact-label">Телефон</span>
-                    <p>+359 88 123 4567</p>
-                </div>
-
-                <div class="contact-info-item">
-                    <span class="contact-label">Имейл</span>
-                    <p>bmwelit@gmail.com</p>
-                </div>
-
-                <div class="contact-info-item">
-                    <span class="contact-label">Работно време</span>
-                    <p>Понеделник - Петък: 09:00 - 18:00</p>
-                </div>
-            </div>
+        <div class="text-center mb-5">
+            <h2 class="fw-bold">Контакти и сервиз</h2>
+            <p class="text-muted">
+                Свържете се с нас при въпроси относно автомобили, оборудване, наличности и поръчки.
+            </p>
         </div>
 
-        <div class="col-lg-7">
-            <div class="contacts-form-card">
-                <h2>Добавяне на коментар</h2>
+        <div class="row g-4">
 
-                <form>
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Име*</label>
-                        <input id="name" name="name" type="text" class="form-control contacts-input" />
+            <div class="col-md-5">
+                <div class="contact-card h-100">
+                    <h3 class="fw-bold mb-4">Информация за връзка</h3>
+
+                    <div class="contact-item">
+                        <span>АДРЕС</span>
+                        <p>гр. Карлово, ул. Ген. Карцов</p>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Имейл*</label>
-                        <input id="email" name="email" type="email" class="form-control contacts-input" />
+                    <div class="contact-item">
+                        <span>ТЕЛЕФОН</span>
+                        <p>+359 88 123 4567</p>
                     </div>
 
-                    <div class="mb-3">
-                        <label for="comment" class="form-label">Коментар*</label>
-                        <textarea id="comment" name="comment" rows="6" class="form-control contacts-input"></textarea>
+                    <div class="contact-item">
+                        <span>ИМЕЙЛ</span>
+                        <p>bmwelit@gmail.com</p>
                     </div>
 
-                    <button type="submit" class="btn btn-primary contacts-btn">
-                        Изпрати
-                    </button>
-                </form>
+                    <div class="contact-item">
+                        <span>РАБОТНО ВРЕМЕ</span>
+                        <p>Понеделник - Петък: 09:00 - 18:00</p>
+                    </div>
+                </div>
             </div>
+
+            <div class="col-md-7">
+                <div class="contact-card" id="contact-form">
+                    <h3 class="fw-bold mb-4 text-center">Добавяне на коментар</h3>
+
+                    <form asp-action="Contacts" asp-controller="Home" method="post">
+                        @Html.AntiForgeryToken()
+                        <div class="mb-3">
+                            <label class="form-label">Име*</label>
+                            <input type="text" class="form-control custom-input" />
+                        </div>
+
+                        <div class="mb-3">
+                            <label class="form-label">Имейл*</label>
+                            <input type="email" class="form-control custom-input" />
+                        </div>
+
+                        <div class="mb-4">
+                            <label class="form-label">Коментар*</label>
+                            <textarea class="form-control custom-input" rows="6"></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary px-5 py-2">
+                            Изпрати
+                        </button>
+                    </form>
+                    
+                </div>
+            </div>
+
         </div>
     </div>
-</div>
+</section>
