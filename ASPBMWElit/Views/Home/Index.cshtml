@@ -2,15 +2,23 @@
     ViewData["Title"] = "Начало";
 }
 
-<div class="hero-section">
-    <div class="hero-overlay">
-        <div class="hero-content">
-            <h1>BMW Елит</h1>
-            <p>Открий своя следващ автомобил с качество, стил и сигурност.</p>
-            <a asp-controller="Cars" asp-action="Index" class="btn btn-dark hero-btn">Виж моделите</a>
-        </div>
+<section class="hero">
+
+    <video autoplay muted loop playsinline class="bg-video">
+        <source src="images/bmw.mp4" type="video/mp4">
+    </video>
+
+    <div class="overlay"></div>
+
+    <div class="hero-content">
+        <h1>НОВОТО<br>BMW 7 SERIES<br>SEDAN</h1>
+
+        <p>ПОЧИТ КЪМ ОТДАДЕНОСТТА.</p>
+
+        <a href="#" class="btn">Открийте сега</a>
     </div>
-</div>
+
+</section>
 
 <hr class="section-line" />
 

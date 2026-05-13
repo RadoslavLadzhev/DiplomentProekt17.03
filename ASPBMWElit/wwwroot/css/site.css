@@ -1,3 +1,9 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+}
 html {
     font-size: 14px;
 }
@@ -108,14 +114,13 @@ body {
     font-size: 14px;
 }
 :root {
-    /* BMW-ish brand blue — коригирай хекса ако имаш точно промоционално значение */
+    
     --bmw-blue: #0A4DA2;
     --bmw-blue-dark: #083E86;
     --content-bg: rgba(255,255,255,0.95);
     --content-text: #212529;
 }
 
-/* Пълен фон на страницата */
 html, body {
     height: 100%;
 }
@@ -125,13 +130,12 @@ body {
     background-color: var(--bmw-blue);
     background-repeat: no-repeat;
     background-attachment: fixed;
-    color: white; /* основен текст върху синьото */
+    color: white;
     font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
 
-/* Основните контейнерни зони да са бели/заден план за четимост */
 .container,
 .container-fluid,
 main,
@@ -144,23 +148,19 @@ main,
     border-radius: 6px;
 }
 
-/* Някои дребни подобрения върху картите/таблиците */
 .card {
     box-shadow: 0 6px 18px rgba(0,0,0,0.12);
 }
 
-/* Навигация — лека прозрачност за contrast */
 .navbar, header, footer {
     background-color: rgba(255,255,255,0.06);
 }
 
-/* Помощни класове, ако искаш локален син фон */
 .bg-bmw {
     background-color: var(--bmw-blue) !important;
     color: white !important;
 }
 
-/* Линкове */
 a {
     color: #0d6efd;
 }
@@ -168,14 +168,12 @@ a {
     a:hover, a:focus {
         color: #0a58ca;
     }
-
-/* Малки екрани — задаваме малко повече padding */
 @media (max-width: 576px) {
     .container, .container-fluid {
         padding: 1rem;
     }
 }
-/* CONTACTS PAGE */
+
 .contacts-page {
     padding: 10px 0 30px 0;
     color: #111;
@@ -287,58 +285,109 @@ textarea.contacts-input {
         padding: 22px;
     }
 }
-/* SUCCESS PAGE */
-.success-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
-.success-box {
-    background: white;
-    padding: 40px 60px;
-    border: 1px solid #ccc;
-    text-align: center;
-    border-radius: 10px;
+.hero {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
 }
 
-    .success-box h2 {
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-
-.success-text {
-    color: #555;
-    margin-bottom: 25px;
+.bg-video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
 
-.stars {
-    font-size: 28px;
-    color: #f1c40f;
-    letter-spacing: 6px;
-}
-.success-page {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 60vh;
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
 }
 
-.success-box {
-    background: #fff;
-    padding: 40px 60px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    text-align: center;
-    color: #111;
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 80px;
 }
 
-    .success-box h2 {
-        margin-bottom: 15px;
-    }
+.hero h1 {
+    font-size: 80px;
+    line-height: 0.95;
+}
 
-.success-text {
-    color: #555;
-    margin-bottom: 20px;
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #1c69d4;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.bg-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-content {
+    position: relative;
+    z-index: 2;
+    color: white;
+    top: 50%;
+    transform: translateY(-50%);
+    margin-left: 80px;
+}
+
+.hero h1 {
+    font-size: 80px;
+    line-height: 0.95;
+}
+
+.hero p {
+    font-size: 24px;
+    margin: 20px 0;
+}
+
+.btn {
+    background: #1c69d4;
+    padding: 15px 30px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+main {
+    padding: 0 !important;
+    margin: 0 !important;
 }
