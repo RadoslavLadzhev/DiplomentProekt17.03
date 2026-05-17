@@ -9,6 +9,7 @@ namespace ASPBMWElit.Data
             : base(options)
         {
         }
+
         public DbSet<Car> Cars { get; set; }
         public DbSet<Equipment> Equipments { get; set; }
         public DbSet<EquipmentType> EquipmentTypes { get; set; }

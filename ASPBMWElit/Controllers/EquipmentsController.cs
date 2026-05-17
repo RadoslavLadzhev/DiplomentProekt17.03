@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 namespace ASPBMWElit.Controllers
 {
     [Authorize(Roles = "Admin")]
+    
     public class EquipmentsController : Controller
     {
         private readonly ApplicationDbContext _context;

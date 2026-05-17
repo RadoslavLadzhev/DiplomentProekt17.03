@@ -1,4 +1,4 @@
-using ASPBMWElit.Data;
+ï»¿using ASPBMWElit.Data;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
@@ -46,8 +46,8 @@ namespace ASPBMWElit
 
             app.UseAuthentication();
             app.UseAuthorization();
-            //àñä
-           
+            //ï¿½ï¿½ï¿½
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");

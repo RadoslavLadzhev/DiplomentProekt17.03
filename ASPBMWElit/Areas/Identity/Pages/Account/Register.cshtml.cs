@@ -47,17 +47,17 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
             _emailSender = emailSender;
         }
 
-        
+
         [BindProperty]
         public InputModel Input { get; set; }
 
-        
+
         public string ReturnUrl { get; set; }
 
-       
+
         public IList<AuthenticationScheme> ExternalLogins { get; set; }
 
-       
+
         public class InputModel
         {
             [Required]
@@ -72,7 +72,7 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
             [Display(Name = "Last Name")]
             public string LastName { get; set; }
 
-            
+
 
             [Required]
             [Phone]
@@ -106,11 +106,11 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
         public async Task<IActionResult> OnPostAsync(string returnUrl = null)
         {
             returnUrl ??= Url.Content("~/");
-           ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
+            ExternalLogins = (await _signInManager.GetExternalAuthenticationSchemesAsync()).ToList();
             if (ModelState.IsValid)
             {
+
                 
-                //var user = CreateUser();
                 Client user = new Client
                 {
                     UserName = Input.Username,
@@ -125,7 +125,7 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
 
                 if (result.Succeeded)
                 {
-                    
+
                     _logger.LogInformation("User created a new account with password.");
                     await _userManager.AddToRoleAsync(user, "User");
                     var userId = await _userManager.GetUserIdAsync(user);
@@ -156,7 +156,6 @@ namespace ASPBMWElit.Areas.Identity.Pages.Account
                 }
             }
 
-            // If we got this far, something failed, redisplay form
             return Page();
         }
 
